@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,14 +31,14 @@
                     <div class="widget-content">
 
                         <div class="tab-pane" id="formcontrols">
-                            <form id="edit-profile" class="form-horizontal">
+                            <form id="edit-profile" class="form-horizontal" method="post" action="addLecturer" commandName="lecturer">
                                 <fieldset>
 
                                     <div class="control-group">
-                                        <label class="control-label" for="firstname">First Name</label>
+                                        <label class="control-label" for="firstName">First Name</label>
 
                                         <div class="controls">
-                                            <input type="text" class="span6" id="firstname" value="John">
+                                            <form:input type="text" class="span6" id="firstName" path="firstName"/>
                                         </div>
                                         <!-- /controls -->
                                     </div>
@@ -45,10 +46,11 @@
 
 
                                     <div class="control-group">
-                                        <label class="control-label" for="lastname">Last Name</label>
+                                        <%--@declare id="lastname"--%>
+                                            <label class="control-label" for="lastName">Last Name</label>
 
                                         <div class="controls">
-                                            <input type="text" class="span6" id="lastname" value="Donga">
+                                            <form:input type="text" class="span6" id="lastname" path="lastName"/>
                                         </div>
                                         <!-- /controls -->
                                     </div>
@@ -59,19 +61,17 @@
                                         <label class="control-label" for="email">Email Address</label>
 
                                         <div class="controls">
-                                            <input type="text" class="span4" id="email"
-                                                   value="john.donga@egrappler.com">
+                                            <form:input type="text" class="span4" id="email" path="email" />
                                         </div>
                                         <!-- /controls -->
                                     </div>
                                     <!-- /control-group -->
 
                                     <div class="control-group">
-                                        <label class="control-label" for="homeaddress">Home Address</label>
+                                        <label class="control-label" for="homeAddress">Home Address</label>
 
                                         <div class="controls">
-                                            <input type="text" class="span4" id="homeaddress"
-                                                   value="john.donga@egrappler.com">
+                                            <form:input type="text" class="span4" id="homeAddress" path="homeAddress"/>
                                         </div>
                                         <!-- /controls -->
                                     </div>
@@ -186,7 +186,7 @@
 
 
                                     <div class="form-actions">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <form:button type="submit" class="btn btn-primary">Save</form:button>
                                         <button class="btn">Cancel</button>
                                     </div>
                                     <!-- /form-actions -->

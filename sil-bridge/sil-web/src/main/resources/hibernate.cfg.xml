@@ -8,6 +8,8 @@
 
     <session-factory>
         <mapping class="org.sil.bridge.model.Student"/>
+        <mapping class="org.sil.bridge.model.Lecturer"/>
+        <mapping class="org.sil.bridge.model.Industry"/>
     </session-factory>
-	    
+
 </hibernate-configuration>

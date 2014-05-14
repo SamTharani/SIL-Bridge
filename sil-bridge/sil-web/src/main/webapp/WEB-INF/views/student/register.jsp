@@ -31,7 +31,7 @@
                                     <label class="control-label" for="firstName">First Name</label>
 
                                     <div class="controls">
-                                        <form:input type="text" class="span6" id="firstName" value="John" path="firstName"/>
+                                        <form:input type="text" class="span6" id="firstName"  path="firstName"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>
@@ -42,7 +42,7 @@
                                     <label class="control-label" for="lastName">Last Name</label>
 
                                     <div class="controls">
-                                        <form:input type="text" class="span6" id="lastName" value="Donga" path="lastName"/>
+                                        <form:input type="text" class="span6" id="lastName"  path="lastName"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>
@@ -53,19 +53,17 @@
                                     <label class="control-label" for="email">Email Address</label>
 
                                     <div class="controls">
-                                        <input type="text" class="span4" id="email"
-                                               value="john.donga@egrappler.com">
+                                        <form:input type="text" class="span4" id="email" path="email"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>
                                 <!-- /control-group -->
 
                                 <div class="control-group">
-                                    <label class="control-label" for="homeaddress">Home Address</label>
+                                    <label class="control-label" for="homeAddress">Home Address</label>
 
                                     <div class="controls">
-                                        <input type="text" class="span4" id="homeaddress"
-                                               value="john.donga@egrappler.com">
+                                        <form:input type="text" class="span4" id="homeAddress"  path="homeAddress"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>

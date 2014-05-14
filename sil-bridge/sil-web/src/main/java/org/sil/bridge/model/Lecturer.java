@@ -3,13 +3,12 @@ package org.sil.bridge.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "STUDENT")
-public class Student {
-
+@Table(name = "LECTURER")
+public class Lecturer {
     @Id
-    @Column(name="studentID")
+    @Column(name="lecturerID")
     @GeneratedValue
-    private Integer studentId;
+    private Integer lecturerId;
 
     @Column(name="FIRST_NAME")
     private String firstName;
@@ -23,10 +22,11 @@ public class Student {
     @Column(name="HOME_ADDRESS")
     private String homeAddress;
 
-    public Student() {
+
+    public Lecturer() {
     }
 
-    public Student(String firstName, String lastName, String email, String homeAddress) {
+    public Lecturer(String firstName, String lastName, String email, String homeAddress) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -34,11 +34,11 @@ public class Student {
     }
 
     public Integer getId() {
-        return studentId;
+        return lecturerId;
     }
 
     public void setId(Integer id) {
-        this.studentId = id;
+        this.lecturerId = id;
     }
 
     public String getFirstName() {

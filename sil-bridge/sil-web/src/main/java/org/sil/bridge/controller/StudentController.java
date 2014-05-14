@@ -4,8 +4,6 @@ import org.sil.bridge.model.Student;
 import org.sil.bridge.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -35,7 +33,7 @@ public class StudentController {
     }
 
     @RequestMapping(value = "/student/addStudent", method = RequestMethod.POST)
-    public String addContact(@ModelAttribute("student") Student student, BindingResult result) {
+    public String addStudent(@ModelAttribute("student") Student student) {
 
         studentService.addStudent(student);
         return "redirect:/student/home";

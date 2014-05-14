@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 
 
@@ -32,14 +33,14 @@
                         <div class="widget-content">
 
                             <div class="tab-pane" id="formcontrols">
-                                <form id="edit-profile" class="form-horizontal">
+                                <form id="edit-profile" class="form-horizontal" method="post" action="addIndustry" commandName="industry">
                                     <fieldset>
 
                                         <div class="control-group">
-                                            <label class="control-label" for="name">Name</label>
+                                            <%--@declare id="name"--%><label class="control-label" for="name">Name</label>
 
                                             <div class="controls">
-                                                <input type="text" class="span6" id="name" value="John">
+                                                <form:input type="text" class="span6" id="name" path="name"/>
                                             </div>
                                             <!-- /controls -->
                                         </div>
@@ -50,8 +51,7 @@
                                             <label class="control-label" for="email">Email Address</label>
 
                                             <div class="controls">
-                                                <input type="text" class="span4" id="email"
-                                                       value="john.donga@egrappler.com">
+                                                <form:input type="text" class="span4" id="email" path="email"/>
                                             </div>
                                             <!-- /controls -->
                                         </div>
@@ -61,8 +61,7 @@
                                             <label class="control-label" for="address">Address</label>
 
                                             <div class="controls">
-                                                <input type="text" class="span4" id="address"
-                                                       value="john.donga@egrappler.com">
+                                                <input type="text" class="span4" id="address" path="address">
                                             </div>
                                             <!-- /controls -->
                                         </div>
@@ -126,7 +125,7 @@
 
 
                                         <div class="form-actions">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <form:button type="submit" class="btn btn-primary">Save</form:button>
                                             <button class="btn">Cancel</button>
                                         </div>
                                         <!-- /form-actions -->

@@ -1,12 +1,20 @@
 package org.sil.bridge.controller;
 
 
+import org.sil.bridge.model.Lecturer;
+import org.sil.bridge.service.LecturerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.Map;
 
 @Controller
 public class LecturerController {
-
+    @Autowired
+    private LecturerService lecturerService;
 
     @RequestMapping(value = "/lecturer/profile")
     public String dashBoardPage(){
@@ -18,15 +26,23 @@ public class LecturerController {
         return "lecturer/home";
     }
 
-    @RequestMapping(value = "/lecturer/register")
-    public String LecturerRegisterPage(){
+    @RequestMapping(value = "/lecturer/register",method = RequestMethod.GET)
+    public String LecturerRegisterPage(Map<String,Object>map){
+        map.put("lecturer",new Lecturer());
         return "lecturer/register";
+    }
+
+    @RequestMapping(value = "/lecturer/addLecturer", method = RequestMethod.POST)
+    public String addLecturer(@ModelAttribute("lecturer") Lecturer lecturer) {
+        lecturerService.addLecturer(lecturer);
+        return "redirect:/lecturer/home";
     }
 
     @RequestMapping(value = "/lecturer/add-project")
     public String addProject(){
         return "lecturer/add-project";
     }
+
 
     @RequestMapping(value = "/lecturer/add-industry")
      public String addIndustry(){
