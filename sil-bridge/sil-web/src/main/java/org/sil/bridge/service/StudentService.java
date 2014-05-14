@@ -9,7 +9,7 @@ public interface StudentService {
 
     public void addStudent(Student student);
 
-    public List<Student> listStudent();
+    public List listStudent();
 
     public void removeStudent(Integer id);
 }

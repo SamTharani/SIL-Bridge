@@ -1,3 +1,6 @@
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -21,14 +24,14 @@
 
                 <div class="widget-content"><br>
                     <div class="tab-pane" id="formcontrols">
-                        <form id="edit-profile" class="form-horizontal">
+                        <form:form id="add-profile" class="form-horizontal" method="post" action="addStudent" commandName="student">
                             <fieldset>
 
                                 <div class="control-group">
-                                    <label class="control-label" for="firstname">First Name</label>
+                                    <label class="control-label" for="firstName">First Name</label>
 
                                     <div class="controls">
-                                        <input type="text" class="span6" id="firstname" value="John">
+                                        <form:input type="text" class="span6" id="firstName" value="John" path="firstName"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>
@@ -36,10 +39,10 @@
 
 
                                 <div class="control-group">
-                                    <label class="control-label" for="lastname">Last Name</label>
+                                    <label class="control-label" for="lastName">Last Name</label>
 
                                     <div class="controls">
-                                        <input type="text" class="span6" id="lastname" value="Donga">
+                                        <form:input type="text" class="span6" id="lastName" value="Donga" path="lastName"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>
@@ -194,12 +197,12 @@
 
 
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-primary">Save</button>
+                                    <form:button type="submit" class="btn btn-primary">Save</form:button>
                                     <button class="btn">Cancel</button>
                                 </div>
                                 <!-- /form-actions -->
                             </fieldset>
-                        </form>
+                        </form:form>
                     </div>
                 </div>
             </div>

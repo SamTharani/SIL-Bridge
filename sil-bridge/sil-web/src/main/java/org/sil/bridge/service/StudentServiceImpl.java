@@ -16,16 +16,16 @@ public class StudentServiceImpl implements StudentService {
 
     @Transactional
     public void addStudent(Student student) {
-
+        studentDao.addStudent(student);
     }
 
     @Transactional
-    public List<Student> listStudent() {
-        return null;
+    public List listStudent() {
+        return studentDao.listStudent();
     }
 
     @Transactional
     public void removeStudent(Integer id) {
-
+        studentDao.removeStudent(id);
     }
 }
