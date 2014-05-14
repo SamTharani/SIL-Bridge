@@ -23,6 +23,7 @@
     <link href="<c:url value="/resources/css/pages/dashboard.css"/>" rel="stylesheet" type="text/css">
     <link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet" type="text/css">
     <link href="<c:url value="/resources/css/pages/signin.css"/>" rel="stylesheet" type="text/css">
+    <link href="<c:url value="/resources/css/multi-select.css"/>" rel="stylesheet" type="text/css">
     <decorator:head/>
 </head>
 
@@ -65,11 +66,22 @@
 <!-- /navbar -->
 <decorator:body/>
 
+
+
 <script src="<c:url value="/resources/js/jquery-1.7.2.min.js"/>"></script>
+<script src="<c:url value="/resources/js/project-title/jquery.multi-select.js"/>"></script>
+
+<%--<script src="<c:url value="/resources/js/jquery-1.7.2.min.js"/>"></script>--%>
 <script src="<c:url value="/resources/js/bootstrap.js"/>"></script>
 
 <script src="<c:url value="/resources/js/signin.js"/>"></script>
 <script src="<c:url value="/resources/js/base.js"/>"></script>
+
+<script type="text/javascript">
+    $('#my-select').multiSelect();
+</script>
+
+
 
 </body>
 

@@ -26,4 +26,8 @@ public class HomeController {
         return "choose-member";
     }
 
+    @RequestMapping(value = "/choose-projects")
+    public String chooseProjectPage(){
+        return "choose-project-title";
+    }
 }

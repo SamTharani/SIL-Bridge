@@ -13,6 +13,7 @@
 
     <decorator name="profileLayout" page="register-layout.jsp">
         <pattern>*/choose-member</pattern>
+        <pattern>*/choose-projects</pattern>
         <pattern>*/student/register</pattern>
         <pattern>*/lecturer/register</pattern>
         <pattern>*/industry/register</pattern>
