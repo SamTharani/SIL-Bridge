@@ -1,11 +1,3 @@
-Developers should maintain following coding standards
-1. every JSP pages should be created in small letters.
-If you want to separate the word for naming you can use hyphen (-) symbol
-
-2. Every Java method should be start with small letter.
-
-
-
 How to Build
 
 1. go to the project directory
