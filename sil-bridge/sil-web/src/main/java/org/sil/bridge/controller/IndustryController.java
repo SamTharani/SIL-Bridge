@@ -30,8 +30,6 @@ public class IndustryController {
         map.put("industry",new Industry())  ;
         return "industry/register";
     }
-
-
     @RequestMapping(value = "/industry/addIndustry", method = RequestMethod.POST)
     public String addIndustry(@ModelAttribute("industry") Industry industry) {
 
