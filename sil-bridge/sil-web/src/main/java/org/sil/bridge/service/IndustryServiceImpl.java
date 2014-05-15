@@ -4,10 +4,12 @@ package org.sil.bridge.service;
 import org.sil.bridge.dao.IndustryDao;
 import org.sil.bridge.model.Industry;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Service
 public class IndustryServiceImpl implements IndustryService {
 
     @Autowired

@@ -98,10 +98,10 @@
                                 <!-- /control-group -->
 
                                 <div class="control-group">
-                                    <label class="control-label" for="studentid">Student Id</label>
+                                    <label class="control-label" for="stuid">Student Id</label>
 
                                     <div class="controls">
-                                        <input type="text" class="span6" id="studentid" value=" ">
+                                        <input type="text" class="span6" id="stuid" value=" ">
                                     </div>
                                     <!-- /controls -->
                                 </div>

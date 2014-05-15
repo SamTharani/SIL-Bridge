@@ -33,7 +33,7 @@
                         <div class="widget-content">
 
                             <div class="tab-pane" id="formcontrols">
-                                <form id="edit-profile" class="form-horizontal" method="post" action="addIndustry" commandName="industry">
+                                <form:form id="edit-profile" class="form-horizontal" method="post" action="addIndustry" commandName="industry">
                                     <fieldset>
 
                                         <div class="control-group">
@@ -130,7 +130,7 @@
                                         </div>
                                         <!-- /form-actions -->
                                     </fieldset>
-                                </form>
+                                </form:form>
                             </div>
                         </div>
 

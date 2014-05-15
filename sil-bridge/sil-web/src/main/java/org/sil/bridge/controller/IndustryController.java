@@ -13,7 +13,6 @@ import java.util.Map;
 
 @Controller
 public class IndustryController {
-
     @Autowired
     private IndustryService industryService;
 
