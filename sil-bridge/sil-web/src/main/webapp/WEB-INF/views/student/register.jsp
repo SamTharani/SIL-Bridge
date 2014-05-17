@@ -192,8 +192,6 @@
                                 <!-- /control-group -->
 
                                 <br/>
-
-
                                 <div class="form-actions">
                                     <form:button type="submit" class="btn btn-primary">Save</form:button>
                                     <button class="btn">Cancel</button>
