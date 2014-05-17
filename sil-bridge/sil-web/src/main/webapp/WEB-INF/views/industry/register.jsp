@@ -61,7 +61,7 @@
                                             <label class="control-label" for="address">Address</label>
 
                                             <div class="controls">
-                                                <input type="text" class="span4" id="address" path="address">
+                                                <form:input type="text" class="span4" id="address" path="address"/>
                                             </div>
                                             <!-- /controls -->
                                         </div>
