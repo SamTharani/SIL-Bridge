@@ -23,11 +23,11 @@
                                 <a href="/sil-web/student/register" class="shortcut">
                                     <i class="shortcut-icon icon-list-alt"></i> <span class="shortcut-label">Student</span>
                                 </a>
-                                <a href="/sil-web/industry/profile" class="shortcut">
+                                <a href="/sil-web/industry/register" class="shortcut">
                                     <i class="shortcut-icon icon-bookmark"></i> <span class="shortcut-label">Industry</span>
                                 </a>
 
-                                <a href="/sil-web/lecturer/profile" class="shortcut">
+                                <a href="/sil-web/lecturer/register" class="shortcut">
                                     <i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Lecturer</span>
                                 </a>
                             </div>
