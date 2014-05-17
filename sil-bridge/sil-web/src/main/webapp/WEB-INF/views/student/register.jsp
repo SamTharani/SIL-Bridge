@@ -76,13 +76,15 @@
 
                                     <div class="controls">
                                         <label class="radio inline">
-                                            <input type="radio" name="male"> Male
+                                            <form:radiobutton  value="male" path="gender"/> Male
                                         </label>
 
                                         <label class="radio inline">
-                                            <input type="radio" name="female"> Female
+                                            <form:radiobutton value="female" path="gender"/> Female
                                         </label>
                                     </div>
+
+
                                     <!-- /controls -->
                                 </div>
                                 <!-- /control-group -->
@@ -91,38 +93,23 @@
                                     <label class="control-label" for="dob">Date Of Birth</label>
 
                                     <div class="controls">
-                                        <input type="date" class="span6" id="dob" value=" ">
+                                        <form:input type="date" class="span6" id="dob" path="dob"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>
                                 <!-- /control-group -->
 
-                                <div class="control-group">
-                                    <label class="control-label" for="stuid">Student Id</label>
-
-                                    <div class="controls">
-                                        <input type="text" class="span6" id="stuid" value=" ">
-                                    </div>
-                                    <!-- /controls -->
-                                </div>
-                                <!-- /control-group -->
 
                                 <div class="control-group">
                                     <label class="control-label">University Name</label>
 
-                                    <div class="controls">
-                                        <div class="btn-group">
-                                            <a class="btn btn-primary" href="#"><i class=""></i>Universities</a>
-                                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#"><i class=""></i> UOJ</a></li>
-                                                <li><a href="#"><i class=""></i> UOM</a></li>
-                                                <li><a href="#"><i class=""></i> UVA</a></li>
-                                                <li class="divider"></li>
-                                                <!--  <li><a href="#"><i class="i"></i> Make admin</a></li>     -->
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <form:select id="grade" class="selectpicker" path="university">
+                                        <form:option value="1">UOJ</form:option>
+                                        <form:option value="2">UMO</form:option>
+                                        <form:option value="3">UCC</form:option>
+                                        <form:option value="4">Rukunu</form:option>
+                                        <form:option value="5">SLIIT</form:option>
+                                    </form:select>
                                     <!-- /controls -->
                                 </div>
                                 <!-- /control-group -->
@@ -130,20 +117,13 @@
                                 <div class="control-group">
                                     <label class="control-label">Faculty Name</label>
 
-                                    <div class="controls">
-                                        <div class="btn-group">
-                                            <a class="btn btn-primary" href="#"><i class=""></i> Faculties</a>
-                                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                               href="#"><span class="caret"></span></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#"><i class=""></i> Science</a></li>
-                                                <li><a href="#"><i class=""></i> Arts</a></li>
-                                                <li><a href="#"><i class=""></i> Management</a></li>
-                                                <li class="divider"></li>
-                                                <!--  <li><a href="#"><i class="i"></i> Make admin</a></li>     -->
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <form:select id="grade" class="selectpicker" path="faculty">
+                                        <form:option value="1">Science</form:option>
+                                        <form:option value="2">Arts</form:option>
+                                        <form:option value="3">Management</form:option>
+                                        <form:option value="4">Agriculture</form:option>
+                                        <form:option value="5">Medicine</form:option>
+                                    </form:select>
                                     <!-- /controls -->
                                 </div>
                                 <!-- /control-group -->
@@ -152,7 +132,7 @@
                                     <label class="control-label" for="course">Course Of Studies</label>
 
                                     <div class="controls">
-                                        <input type="text" class="span6" id="course" value=" ">
+                                        <form:input type="text" class="span6" id="course" path="course"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>
@@ -162,7 +142,7 @@
                                     <label class="control-label" for="username">User Name</label>
 
                                     <div class="controls">
-                                        <input type="text" class="span6" id="username" value=" ">
+                                        <form:input type="text" class="span6" id="username" path="username"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>
@@ -172,9 +152,7 @@
                                     <label class="control-label" for="password1">Password</label>
 
                                     <div class="controls">
-                                        <input type="password" class="span4" id="password1"
-                                               value="thisispassword">
-                                    </div>
+                                        <input type="password" class="span4" id="password1">                                   </div>
                                     <!-- /controls -->
                                 </div>
                                 <!-- /control-group -->
@@ -184,8 +162,8 @@
                                     <label class="control-label" for="password2">Confirm Password</label>
 
                                     <div class="controls">
-                                        <input type="password" class="span4" id="password2"
-                                               value="thisispassword">
+                                        <form:input type="password" class="span4" id="password2"
+                                               path="repassword"/>
                                     </div>
                                     <!-- /controls -->
                                 </div>

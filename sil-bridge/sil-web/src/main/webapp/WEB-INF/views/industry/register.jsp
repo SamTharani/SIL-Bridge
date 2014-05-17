@@ -66,12 +66,27 @@
                                             <!-- /controls -->
                                         </div>
                                         <!-- /control-group -->
+                                        <div class="control-group">
+                                            <label class="control-label">Gender</label>
 
+
+                                            <div class="controls">
+                                                <label class="radio inline">
+                                                    <form:radiobutton  value="male" path="gender"/> Male
+                                                </label>
+
+                                                <label class="radio inline">
+                                                    <form:radiobutton value="female" path="gender"/> Female
+                                                </label>
+                                            </div>
+                                            <!-- /controls -->
+                                        </div>
+                                        <!-- /control-group -->
                                         <div class="control-group">
                                             <label class="control-label" for="username">User Name</label>
 
                                             <div class="controls">
-                                                <input type="text" class="span6" id="username" value=" ">
+                                                <form:input type="text" class="span6" id="username" path="username"/>
                                             </div>
                                             <!-- /controls -->
                                         </div>
@@ -81,8 +96,7 @@
                                             <label class="control-label" for="password1">Password</label>
 
                                             <div class="controls">
-                                                <input type="password" class="span4" id="password1"
-                                                       value="thisispassword">
+                                                <input type="password" class="span4" id="password1">
                                             </div>
                                             <!-- /controls -->
                                         </div>
@@ -93,8 +107,8 @@
                                             <label class="control-label" for="password2">Confirm Password</label>
 
                                             <div class="controls">
-                                                <input type="password" class="span4" id="password2"
-                                                       value="thisispassword">
+                                                <form:input type="password" class="span4" id="password2"
+                                                       path="repassword"/>
                                             </div>
                                             <!-- /controls -->
                                         </div>
@@ -104,7 +118,7 @@
                                             <label class="control-label" for="webid">Web Address</label>
 
                                             <div class="controls">
-                                                <input type="text" class="span4" id="webid" value="">
+                                                <form:input type="text" class="span4" id="webid" path="webid"/>
                                             </div>
                                             <!-- /controls -->
                                         </div>
@@ -115,7 +129,7 @@
                                             <label class="control-label" for="payment">Membership Payment</label>
 
                                             <div class="controls">
-                                                <input type="decimal" class="span4" id="payment" value="">
+                                                <form:input type="decimal" class="span4" id="payment" path="payment"/>
                                             </div>
                                             <!-- /controls -->
                                         </div>
