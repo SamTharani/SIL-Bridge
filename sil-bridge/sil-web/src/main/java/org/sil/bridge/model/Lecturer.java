@@ -6,9 +6,9 @@ import javax.persistence.*;
 @Table(name = "LECTURER")
 public class Lecturer {
     @Id
-    @Column(name="ID")
+    @Column(name="LECTURER_ID")
     @GeneratedValue
-    private Integer id;
+    private Integer lecturerId;
 
     @Column(name="FIRST_NAME")
     private String firstName;
@@ -33,12 +33,12 @@ public class Lecturer {
         this.homeAddress = homeAddress;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getLecturerId() {
+        return lecturerId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setLecturerId(Integer id) {
+        this.lecturerId = id;
     }
 
     public String getFirstName() {

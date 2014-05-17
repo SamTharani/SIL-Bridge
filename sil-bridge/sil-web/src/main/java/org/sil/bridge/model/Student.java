@@ -7,9 +7,9 @@ import javax.persistence.*;
 public class Student {
 
     @Id
-    @Column(name="ID")
+    @Column(name="STUDENT_ID")
     @GeneratedValue
-    private Integer id;
+    private Integer studentId;
 
     @Column(name="FIRST_NAME")
     private String firstName;
@@ -33,12 +33,12 @@ public class Student {
         this.homeAddress = homeAddress;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getStudentId() {
+        return studentId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setStudentId(Integer id) {
+        this.studentId = id;
     }
 
     public String getFirstName() {
